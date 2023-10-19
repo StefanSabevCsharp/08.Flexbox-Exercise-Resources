@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h2,h3,h4,h5,h6{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 0.5em 0;
+        }
+        body{
+            background-color: rgb(238,238,238);
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 60em;
+            margin: 3em auto;
+            gap: 2em;
+
+        } 
+        .site-header{
+            border-bottom: 2px solid black;
+            padding-bottom: 1em;
+            flex:1 1 100%;
+        }
+        main{
+            flex : 1 1 70%;
+        }
+        aside{
+            flex: 1 1 25%;
+        }
+        p{
+            line-height: 1.5;
+            padding-top: 0.5em;
+        }
+        img{
+           background: white;
+        }
+        /* blockquote{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-left: 1px solid black;
+            padding-left: 3em;
+            padding-top: 1em;
+        } */
+        ul li{
+            list-style: none;
+            padding-top: 0.5em;
+        }
+        a{
+            color: rgb(0, 153, 0);
+            text-decoration: none;
+        }
+        .right{
+            float: right;
+            margin: 0 0 1em 1em;
+            border: 2px solid black;
+            padding: 0.3em;
+        }
+        .left{
+            float: left;
+            margin: 0 1em 1em 0;
+            border: 2px solid black;
+            padding: 0.3em;
+        }
+        
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+            <header class="site-header">
+                <h1>Site Title</h1>
+            </header>
+            <main>
+                <h2>Header Level 2</h2>
+                <p>
+                    <img class="right" src="images/Image1.jpg" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum laboriosam quia neque, dolores quidem velit qui deleniti obcaecati, saepe illo voluptate numquam adipisci sint ipsam nihil. Quos, impedit numquam! Veniam!</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum corrupti accusantium earum. Tenetur, iusto. Consequuntur odio vitae perspiciatis, corrupti accusantium, fuga exercitationem deleniti et provident ad explicabo ipsum earum!
+                </p> 
+                
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium eligendi eaque molestiae. Delectus facilis sequi accusamus dolore deserunt cum exercitationem quo pariatur. Nulla incidunt autem maxime ullam deleniti placeat distinctio.
+                </p>
+                <h2>Header Level 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia beatae nisi animi debitis voluptatum itaque dolor expedita praesentium ducimus dicta cum placeat facilis et, quos doloremque eos veniam, numquam maxime.</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum corrupti accusantium earum. Tenetur, iusto. Consequuntur odio vitae perspiciatis, corrupti accusantium, fuga exercitationem deleniti et provident ad explicabo ipsum earum!
+                </p> 
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum corrupti accusantium earum. Tenetur, iusto. Consequuntur odio vitae perspiciatis, corrupti accusantium, fuga exercitationem deleniti et provident ad explicabo ipsum earum!
+                </p>
+                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, amet voluptatem? Neque magnam ad voluptatum. Laboriosam quos cupiditate, tenetur asperiores aspernatur accusamus nostrum voluptates, illum, quo amet corporis molestiae harum.</blockquote>
+                <!-- <img src="images/Image2.jpg" alt=""> -->
+                <h2>Header Level 2</h2>
+                <p>
+                    <img class="left" src="images/Image2.jpg" alt="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat temporibus, nostrum illo neque quaerat tempore autem. Architecto, magni ipsa modi distinctio facilis qui, numquam dicta iste, voluptate magnam doloremque cum!</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum corrupti accusantium earum. Tenetur, iusto. Consequuntur odio vitae perspiciatis, corrupti accusantium, fuga exercitationem deleniti et provident ad explicabo ipsum earum!
+                </p> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, rem nihil. Exercitationem error voluptatum esse corrupti dolores a sunt ipsa corporis repellat accusamus doloremque quam quasi, quos, delectus porro quo.</p>
+            </main>
+            <aside>
+                <h3>Categories</h3>
+                    <ul>
+                        <li><a href="">Stuff</a></li>
+                        <li><a href="">Something</a></li>
+                        <li><a href="">Important</a></li>
+                        <li><a href="">Dogs</a></li>
+
+                    </ul>
+            <h3>Social</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                    
+                </ul>
+            </aside>
+     </div>
+    <footer class="site-footer">
+        <p>&copy; 2020</p>
+    </footer>
+    
+</body>
+</html>

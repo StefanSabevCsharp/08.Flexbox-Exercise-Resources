@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+        display: flex;
+       background: #DDD;
+       box-sizing: border-box;
+       justify-content: center;
+       align-items: center;
+        min-height: 100vh;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .container ul{
+        display: flex;
+        gap: 1em;
+        
+    }
+    .container img{
+        display: block;
+        width: auto;
+        height: 100%;
+        transition: 0.3s ease-in-out;
+        transform: translateX(-50%);
+    }
+    .container li{
+        display: block; 
+        width: 10em;
+        height: 25em;
+        overflow: hidden;
+        border-radius: 0.5em;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 0 1em 0.5em rgba(0,0,0,0.2);
+    }
+    .container li:hover{
+        width: 35em;
+       
+    }
+    .container li:hover img{
+        transform: translateX(0);
+    }
+    
+  
+   </style>
+</head>
+<body>
+    <section class="container">
+        <ul>
+            <li><img src="images/Image1.jpg" alt=""></li>
+            <li><img src="images/Image2.jpg" alt=""></li>
+            <li><img src="images/Image3.jpg" alt=""></li>
+            <li><img src="images/Image4.jpg" alt=""></li>
+        
+        </ul>
+    </section>
+</body>
+</html>

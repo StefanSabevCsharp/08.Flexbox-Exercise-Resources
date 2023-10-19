@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+        }
+        .site-header{
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+            border-bottom: 2px solid black;
+        }
+        main.content{
+            padding-top: 1em;
+
+        }
+        p{
+            line-height: 1.5;
+            padding-top: 0.5em;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: green;
+            font-weight: bold;
+        }
+        ul li {
+            display: inline-block;
+            position: relative;
+            margin: 1em;
+        }
+        ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            padding: 0.5em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        ul li:hover > ul {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <h1>Site Title</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">About</a>
+                    <ul>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Our History</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <h2>Heading Level 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui eum quasi, culpa similique labore quas quos in iste temporibus. Accusamus fugiat animi repudiandae recusandae reiciendis nisi possimus dignissimos in.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat commodi dolorem impedit itaque ipsum voluptatum perferendis soluta iure, culpa laboriosam, fugiat corporis, nihil quidem at consectetur facere mollitia dolorum ducimus.
+
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid placeat iste provident accusantium magnam adipisci, a amet assumenda, quaerat quidem qui, quo voluptas nemo commodi suscipit est odit alias molestiae.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio quo est cupiditate odit porro, amet, sequi magnam nemo suscipit rerum, culpa facilis tenetur nisi repellendus hic veritatis recusandae optio cumque.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, illo facilis quas consectetur eaque minus, veritatis libero tenetur asperiores incidunt eveniet enim nihil similique adipisci! Nulla, architecto! Cum, id amet?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eum, numquam voluptatum rerum, quibusdam facilis modi expedita magnam sunt temporibus tempora sit nesciunt voluptatem exercitationem ipsa neque praesentium ipsum id!
+        </p>
+    </main>
+    
+</body>
+</html>
